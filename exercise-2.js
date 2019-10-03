@@ -1,19 +1,19 @@
-var cupcake = document.querySelector('.cupcake');
-var container = document.querySelector('.orders');
+const cupcake = document.querySelector('.cupcake');
+const container = document.querySelector('.orders');
 
-var cupcakes = [
+const cupcakes = [
     {id:1, flavor: 'Strawberry'},
     {id:2, flavor: 'Apple'},
     {id:3, flavor: 'Banana'},
 ];
 
-var randomCupcake;
-var orderNumber = 0;
-var baseAmount = 5;
-var finalAmount;
-var discountID = 2;
-var discountAmount = 3;
-var message;
+let randomCupcake;
+let orderNumber = 0;
+const baseAmount = 5;
+let finalAmount;
+const discountID = 2;
+const discountAmount = 3;
+let message;
 
 cupcake.addEventListener('click', function(){
     randomCupcake = Math.floor(Math.random() * cupcakes.length) + 0;
