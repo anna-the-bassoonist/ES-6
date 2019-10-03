@@ -71,9 +71,20 @@ const players = [{
     }
 ]
 players.forEach(function (player) {
-    console.log(`${player.jersey} - ${player.name} -- Position: ${player.position} -- PPG: ${Math.round(player.PPG)}`)
+    
     let templatePlay= `
      <li>${player.jersey} - ${player.name} -- Position: ${player.position} -- PPG: ${Math.round(player.PPG)}</li>    
     `
-    allPlayers.insertAdjacentHTML('afterbegin', templatePlay);
+    allPlayers.insertAdjacentHTML('beforeend', templatePlay);
 });
+
+// other possibility: 
+// let listOf = '';
+
+// for (let i = 0; i < players.length; i ++){
+//     let player = players[i];
+
+//     listOf += ` <li>${player.jersey} - ${player.name} -- Position: ${player.position} -- PPG: ${Math.round(player.PPG)}</li>  `
+// }
+
+// allPlayers.insertAdjacentHTML('beforeend', listOf)
