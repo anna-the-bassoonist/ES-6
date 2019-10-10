@@ -7,8 +7,8 @@
 let promise = new Promise((resolved, rejected) => {
 
     setTimeout(() => {
-        resolved();
-        // rejected(); //means everything got ok
+        resolved();//means everything got ok
+        // rejected(); // it didnt went ok
 
     }, 5000);
 });
