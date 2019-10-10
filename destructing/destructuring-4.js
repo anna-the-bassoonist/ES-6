@@ -1,5 +1,6 @@
-function createCar({color,brand,model, type, year}){
-
+function createCar({color, brand, model, type, year}){
+//tutaj nie jest wazne w jakiej kolejnosci podajemy paramentry funkcji
+//(destructuring)
 }
 
 const car = {
