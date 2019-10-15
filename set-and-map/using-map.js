@@ -1,0 +1,2 @@
+let superHero = new Map();
+
