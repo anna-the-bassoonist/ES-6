@@ -6,6 +6,12 @@ const users = [
 //ES5
 // const lastname = users[0].lastname;
 
+const [{lastname: firstLastname}, {lastname: secondLastname}] = users;
+
+console.log(firstLastname);
+console.log(secondLastname);
+
+
 const [{lastname}] = users;
 console.log(lastname);
 

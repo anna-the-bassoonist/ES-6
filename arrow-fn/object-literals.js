@@ -17,7 +17,7 @@ const createCharacter = (name, powers) => {
     }
 }
 const characterObj = createCharacter('superman', 'fly');
-console.log(characterObj);
+console.log(JSON.stringify(characterObj));
 console.log(characterObj.getFriends());
 
 

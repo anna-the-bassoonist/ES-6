@@ -23,7 +23,7 @@ function randomBrand(){
 function carsES6(brand = randomBrand()) {
     console.log(`brand is ${brand}`);
 }
-carsES6();
+carsES6('ferrari');
 
 //Default arguments exercise one
 //We want to run a function that greets the user by his name, but if the name is not provided we want to show a default name.

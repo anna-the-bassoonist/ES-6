@@ -95,9 +95,8 @@ const computers = [{
     },
 ];
 
-const compTypes = computers.reduce(function (carry, item) {
-    // let item = oper.os
-    carry[item.os] = (carry[item.os] + 1) || 1;
+const compTypes = computers.reduce(function (carry, {os, price}) {
+    carry[os] = (carry[os] + 1) || 1;
     // console.log(carry);
     return carry;
 }, {});

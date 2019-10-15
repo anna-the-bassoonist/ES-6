@@ -13,10 +13,11 @@ console.log(sum(9));
 const cars = {
     brands: ['Ford', 'Audi', 'BMW'],
     category: 'sport car',
-    message: function () {
-        let $this = this;
+    message:  function() {
+        console.log('works', this.brands);
         return this.brands.map((brand) => {
-            console.log(`${brand} is a ${this.category}`);
+            console.log('works in map', this.brands);
+            setTimeout(() => {console.log('works in next nested function NOT', this.brands);}, 1000)
         })
     }
 }
